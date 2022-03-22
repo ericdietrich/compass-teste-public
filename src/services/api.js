@@ -38,6 +38,9 @@ export function USER_SEARCH (query) {
     url: `${api.baseUrl}/search/users?q=${query}`,
     options: {
       method: "GET"
+    },
+    headers: {
+      Authorization: 'token ' + window.localStorage.getItem('github_token'),
     }
   }
 }
@@ -49,7 +52,7 @@ export function REPO_SEARCH (query) {
       method: "GET"
     },
     headers: {
-      Authorization: 'Bearer ' + window.localStorage.getItem('github_token'),
+      Authorization: 'token ' + window.localStorage.getItem('github_token'),
     }
   }
 }
