@@ -1,0 +1,40 @@
+.user-list {
+  margin-bottom: 30px;
+  &__item {
+    margin-bottom: 30px;
+    border: 1px solid #D0D7DE;
+    border-radius: 6px;
+    padding: 20px;
+  }
+
+  &__profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    &__img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-right: 15px;
+    }
+    &__login {
+      word-break: break-word;
+    }
+
+  }
+  &__button {
+    width: 160px;
+    margin: 0 auto;
+  }
+
+}
+
+@media (max-width: 992px) {
+  .user-list {
+    &__item {
+      margin-bottom: 15px;
+    }
+  }
+}

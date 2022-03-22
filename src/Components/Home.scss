@@ -1,0 +1,22 @@
+.search-form {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: flex;
+  gap: 2px;
+  &__button {
+    width: 180px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .search-form {
+    &__input {
+      width: 50%;
+    }
+    &__button {
+      width: 50%;
+    }
+  }
+}

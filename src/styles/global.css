@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Spectral:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+html,
+body,
+h1, 
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+} 
+
+ul, li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: initial;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+input {
+  outline: none;
+  border:none;
+  background-color:transparent;
+  box-shadow: none;
+}
+
+input {
+  outline: 1px solid #D0D7DE;
+  padding: 0 10px;
+}
+
+input:focus {
+  outline: 1px solid #838080;
+}
+
+button {
+  background: transparent;
+  border: 0;
+}
+
+.title {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  height: 40px;
+  background: #f6f8fa;
+  border-radius: 6px;
+  box-shadow: 0 0 0 1px  #D0D7DE;
+  color: #000;
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+}
+
+.btn svg {
+  margin-right: 10px;
+}
+.btn:hover {
+  box-shadow: 0 0 0 1px  #838080, inset 0 0 0 1px  #838080;
+}

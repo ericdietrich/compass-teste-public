@@ -1,0 +1,44 @@
+.repo-card {
+  margin-bottom: 30px;
+  border: 1px solid #D0D7DE;
+  border-radius: 6px;
+  padding: 20px;
+  height: calc(100% - 30px);
+  &__header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    &__img {
+      display: flex;
+      margin-right: 10px;
+      svg {
+        width: 20px;
+        height: 20px;
+      }
+    }
+    &__name {
+      font-size: 18px;
+      word-break: break-word;
+    }
+  }
+  &__author {
+    margin-bottom: 15px;
+    word-break: break-word;
+    span {
+      font-weight: bold;
+    }
+  }
+  &__description {
+    word-wrap: break-word;
+    span {
+      font-weight: bold;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .repo-card{
+    margin-bottom: 15px;
+    height: calc(100% - 15px);
+  }
+}
